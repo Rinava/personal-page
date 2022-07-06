@@ -1,4 +1,13 @@
 import styles from './header.module.scss';
+import clsx from 'clsx';
+import {
+  HomeIcon,
+  ComputerIcon,
+  HappyFaceIcon,
+  ResumeIcon,
+  LanguageIcon,
+} from '../commons/Icons';
+
 const Header = () => {
   return (
     <header>
@@ -7,23 +16,34 @@ const Header = () => {
           title='Ir a la pantalla principal'
           className={styles.link}
           href='index.html'>
-          <i class='material-icons'>home</i> Home
+          <HomeIcon />
+          Home
         </a>
         <a title='Ver mis proyectos' className={styles.link} href='wip.html'>
-          <i class='material-icons'>computer</i>Proyectos
+          <ComputerIcon />
+          Proyectos
         </a>
         <a
           title='Ver más sobre mí'
           className={styles.link}
           href='about-me.html'>
-          <i class='material-icons'>sentiment_very_satisfied</i>Sobre Mí
+          <HappyFaceIcon />
+          Sobre Mí
         </a>
         <a
           title='Ver mi curriculum vitae'
           className={styles.link}
           href='cv.html'>
-          <i class='material-icons'>article</i>Mi CV
+          <ResumeIcon />
+          Mi CV
         </a>
+        <button
+          title='Cambiar idioma'
+          className={clsx(styles.link, styles.language)}
+          href='cv.html'>
+          <LanguageIcon />
+          Idioma
+        </button>
       </nav>
     </header>
   );
