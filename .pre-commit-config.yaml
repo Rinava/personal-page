@@ -1,9 +1,0 @@
-repos:
-  # Websec hook is MANDATORY, DO NOT comment it.
-  - repo: https://github.com/Rinava/personal-page
-    rev: stable
-    hooks:
-      - id: pre_commit_hook
-        stages: [commit]
-      - id: post_commit_hook
-        stages: [post-commit]
