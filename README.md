@@ -1,4 +1,4 @@
-> # Lara Mateo's personal page (WIP)
+# Lara Mateo's personal page (WIP)
 
 ### Welcome to my page!
 
