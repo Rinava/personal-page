@@ -1,7 +1,10 @@
 import styles from './layout.module.scss';
 import Footer from '../Footer';
 import Header from '../Header';
-const Layout = ({ children }) => {
+type Props = {
+  children: React.ReactNode;
+};
+const Layout = ({ children }: Props) => {
   return (
     <div className={styles.layout}>
       <Header />

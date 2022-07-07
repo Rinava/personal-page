@@ -12,10 +12,7 @@ const Header = () => {
   return (
     <header>
       <nav className={styles.nav_bar}>
-        <a
-          title='Ir a la pantalla principal'
-          className={styles.link}
-          href='index.html'>
+        <a title='Ir a la pantalla principal' className={styles.link}>
           <HomeIcon />
           Home
         </a>
@@ -23,24 +20,17 @@ const Header = () => {
           <ComputerIcon />
           Proyectos
         </a>
-        <a
-          title='Ver más sobre mí'
-          className={styles.link}
-          href='about-me.html'>
+        <a title='Ver más sobre mí' className={styles.link}>
           <HappyFaceIcon />
           Sobre Mí
         </a>
-        <a
-          title='Ver mi curriculum vitae'
-          className={styles.link}
-          href='cv.html'>
+        <a title='Ver mi curriculum vitae' className={styles.link}>
           <ResumeIcon />
           Mi CV
         </a>
         <button
           title='Cambiar idioma'
-          className={clsx(styles.link, styles.language)}
-          href='cv.html'>
+          className={clsx(styles.link, styles.language)}>
           <LanguageIcon />
           Idioma
         </button>
