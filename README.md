@@ -3,7 +3,7 @@
 ### Welcome to my page!
 
 This page is in progress, i'm currently migrating my old page to `next.js` because it was based on `javascript`, `HTML` and `CSS`, nothing more.
-The productive link is [http://laramateo.com(http://laramateo.com)
+The productive link is [http://laramateo.com](http://laramateo.com)
 
 ### How to run my page
 
