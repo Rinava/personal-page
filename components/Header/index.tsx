@@ -1,39 +1,30 @@
 import styles from './header.module.scss';
-import clsx from 'clsx';
-import {
-  HomeIcon,
-  ComputerIcon,
-  HappyFaceIcon,
-  ResumeIcon,
-  LanguageIcon,
-} from '../commons/Icons';
+import urls from './urls';
+import Link from 'next/link';
 
 const Header = () => {
   return (
     <header>
       <nav className={styles.nav_bar}>
-        <a title='Ir a la pantalla principal' className={styles.link}>
-          <HomeIcon />
-          Home
-        </a>
-        <a title='Ver mis proyectos' className={styles.link} href='wip.html'>
-          <ComputerIcon />
-          Proyectos
-        </a>
-        <a title='Ver más sobre mí' className={styles.link}>
-          <HappyFaceIcon />
-          Sobre Mí
-        </a>
-        <a title='Ver mi curriculum vitae' className={styles.link}>
-          <ResumeIcon />
-          Mi CV
-        </a>
-        <button
-          title='Cambiar idioma'
-          className={clsx(styles.link, styles.language)}>
-          <LanguageIcon />
-          Idioma
+        <button className={styles.btn_open_menu} onClick={() => {}}>
+          X
         </button>
+        <div className={styles.nav_mobile}>
+          <ul className={styles.nav_list}>
+            {urls.map(({ title, name, icon, url }, index) => {
+              return (
+                <li key={index} className={styles.link}>
+                  <Link href={url}>
+                    <a title={title}>
+                      {icon && <i className={styles.icon}>{icon}</i>}
+                      <span className={styles.name}>{name}</span>
+                    </a>
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
       </nav>
     </header>
   );
