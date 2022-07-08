@@ -1,13 +1,16 @@
 import styles from './header.module.scss';
 import urls from './urls';
 import Link from 'next/link';
+import { HamburguerIcon } from '../commons/Icons';
 
 const Header = () => {
   return (
     <header>
       <nav className={styles.nav_bar}>
         <button className={styles.btn_open_menu} onClick={() => {}}>
-          X
+          <i className={styles.icon_menu}>
+            <HamburguerIcon />
+          </i>
         </button>
         <div className={styles.nav_mobile}>
           <ul className={styles.nav_list}>
