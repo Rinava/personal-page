@@ -1,9 +1,4 @@
-import {
-  ComputerIcon,
-  HappyFaceIcon,
-  ResumeIcon,
-  HomeIcon,
-} from '../commons/Icons';
+import { ComputerIcon, HappyFaceIcon, ResumeIcon, HomeIcon } from './../../commons/Icons';
 const urls = [
   {
     name: 'Home',
