@@ -1,0 +1,72 @@
+.icon {
+    line-height: 0;
+}
+
+.icon svg {
+    fill: white;
+    margin-right: 10px;
+    width: 1rem;
+    height: 1rem;
+
+}
+
+.link {
+    font-weight: bold;
+    mix-blend-mode: hard-light;
+    margin-right: 20px;
+    display: inline-block;
+    padding: 0.3rem;
+
+    margin: 1em;
+    text-decoration: none;
+    color: white;
+    background-image: linear-gradient(90deg,
+            hsl(284, 91%, 69%) 0%,
+            hsl(284, 91%, 69%) 12.5%,
+            hsl(329, 91%, 69%) 12.5%,
+            hsl(329, 91%, 69%) 25%,
+            hsl(14, 91%, 69%) 25%,
+            hsl(14, 91%, 69%) 37.5%,
+            hsl(59, 91%, 69%) 37.5%,
+            hsl(59, 91%, 69%) 50%,
+            hsl(104, 91%, 69%) 50%,
+            hsl(104, 91%, 69%) 62.5%,
+            hsl(149, 91%, 69%) 62.5%,
+            hsl(149, 91%, 69%) 75%,
+            hsl(194, 91%, 69%) 75%,
+            hsl(194, 91%, 69%) 87.5%,
+            hsl(239, 91%, 69%) 87.5%,
+            hsl(239, 91%, 69%) 100%);
+    background-size: 0 5px, auto;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    transition: all 0.2s ease-out;
+    border-radius: 5px;
+}
+
+.link:hover {
+    background-size: 100% 5px, auto;
+}
+
+.link a {
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+
+    .nav_list {
+        opacity: 0;
+        visibility: collapse;
+    }
+
+    .nav_list_open {
+        display: flex;
+        flex-direction: column;
+        visibility: visible;
+        padding: 0;
+        opacity: 1;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+}

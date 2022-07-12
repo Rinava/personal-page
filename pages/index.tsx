@@ -5,7 +5,7 @@ import styles from '../styles/Home.module.css';
 import Layout from '../components/Layout';
 
 const Home: NextPage = () => {
-  return <Layout>dsads</Layout>;
+  return <Layout> Work in Progress</Layout>;
 };
 
 export default Home;

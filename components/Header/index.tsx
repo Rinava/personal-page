@@ -1,39 +1,28 @@
+import { useState } from 'react';
 import styles from './header.module.scss';
 import clsx from 'clsx';
-import {
-  HomeIcon,
-  ComputerIcon,
-  HappyFaceIcon,
-  ResumeIcon,
-  LanguageIcon,
-} from '../commons/Icons';
+import UrlList from './UrlList';
+
+import { HamburguerIcon } from '../commons/Icons';
 
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  function handleMenu(e: React.MouseEvent<HTMLButtonElement>) {
+    e.preventDefault();
+    setIsOpen(!isOpen);
+  }
+
   return (
     <header>
-      <nav className={styles.nav_bar}>
-        <a title='Ir a la pantalla principal' className={styles.link}>
-          <HomeIcon />
-          Home
-        </a>
-        <a title='Ver mis proyectos' className={styles.link} href='wip.html'>
-          <ComputerIcon />
-          Proyectos
-        </a>
-        <a title='Ver más sobre mí' className={styles.link}>
-          <HappyFaceIcon />
-          Sobre Mí
-        </a>
-        <a title='Ver mi curriculum vitae' className={styles.link}>
-          <ResumeIcon />
-          Mi CV
-        </a>
-        <button
-          title='Cambiar idioma'
-          className={clsx(styles.link, styles.language)}>
-          <LanguageIcon />
-          Idioma
+      <nav className={clsx(styles.nav_bar, isOpen && styles.nav_bar_open)}>
+        <button className={styles.btn_open_menu} onClick={handleMenu}>
+          <i className={styles.icon_menu}>
+            <HamburguerIcon />
+          </i>
         </button>
+        <div className={styles.nav_mobile}>
+          <UrlList isOpen={isOpen} />
+        </div>
       </nav>
     </header>
   );
