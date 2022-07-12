@@ -7,7 +7,7 @@ import { HamburguerIcon } from '../commons/Icons';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
-  function handleMenu(e) {
+  function handleMenu(e: React.MouseEvent<HTMLButtonElement>) {
     e.preventDefault();
     setIsOpen(!isOpen);
   }

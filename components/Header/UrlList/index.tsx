@@ -2,8 +2,11 @@ import Link from 'next/link';
 import styles from './styles.module.scss';
 import urls from './urls';
 import clsx from 'clsx';
+type Props = {
+  isOpen: boolean;
+};
 
-const UrlList = ({ isOpen }) => {
+const UrlList = ({ isOpen }: Props) => {
   return (
     <ul className={clsx(styles.nav_list, isOpen && styles.nav_list_open)}>
       {urls.map(({ title, name, icon, url }, index) => {
