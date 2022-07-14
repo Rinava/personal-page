@@ -1,0 +1,73 @@
+.flip_card {
+    background-color: transparent;
+    width: 90%;
+    max-width: 500px;
+    height: 300px;
+    perspective: 1000px;
+    margin: 20px;
+    font-size: 2rem;
+}
+
+/* This container is needed to position the front and back side */
+.card_inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip_card:hover .card_inner {
+    transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.front,
+.back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border: 1px solid #f1f1f1;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.front {
+    background-color: #a1fff4;
+    color: #0085ba;
+}
+
+/* Style the back side */
+.back {
+    color: white;
+    transform: rotateY(180deg);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Rubik, sans-serif;
+    background-color: #ffa1ac;
+    color: #a10033;
+}
+
+.partial-border {
+    margin: 20px;
+    padding: 10px;
+    background: linear-gradient(white, white) bottom left/150px 2px,
+        linear-gradient(white, white) bottom left/2px 100px,
+        linear-gradient(white, white) top right/150px 2px,
+        linear-gradient(white, white) top right/2px 100px;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
