@@ -10,7 +10,7 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Lara Mateo's Portfolio</title>
+        <title>Lara Mateo&apos;s Portfolio</title>
         <meta name='description' content='Who is Lara Mateo' />
         <meta httpEquiv='content-language' content='en-us' />
         <meta name='chartSet' charSet='utf-8' />
