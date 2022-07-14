@@ -1,3 +1,4 @@
+
 .nav_bar {
   height: 3.3rem;
   background-color: #2196f3;
@@ -13,12 +14,12 @@
 }
 
 @media screen and (max-width: 768px) {
-
   .nav_bar {
     align-items: flex-start;
     min-height: 3.3rem;
     transition: min-height 0.3s ease-in-out;
     height: 3.3rem;
+    justify-content: flex-end;
   }
 
   .nav_bar_open {
