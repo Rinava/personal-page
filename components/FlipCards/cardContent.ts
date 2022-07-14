@@ -1,9 +1,10 @@
+import { StaticImageData } from 'next/image';
 type CardContent = {
   front: string,
   back: {
     info: string,
     emoji?: string,
-    image?: string,
+    image?: string
   },
 };
 
@@ -47,7 +48,7 @@ const cardContent : CardContent[] = [
     front: 'My fascination',
     back: {
       info: 'My cats',
-      image: 'felipe-darwin-isaac.jpg',
+      image: '/assets/felipe-darwin-isaac.jpeg',
     },
   },
 ];

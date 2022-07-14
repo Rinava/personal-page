@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import styles from './styles.module.scss';
 const FlipCard = ({ content }) => {
   const { front, back } = content;
@@ -14,7 +15,15 @@ const FlipCard = ({ content }) => {
               {info}
               <span className={styles.emoji}>{emoji}</span>
             </h3>
-            <img src={image} alt='' />
+            {image && (
+              <Image
+                className={styles.image}
+                src={image}
+                alt=''
+                width={250}
+                height={150}
+              />
+            )}
           </div>
         </div>
       </div>
