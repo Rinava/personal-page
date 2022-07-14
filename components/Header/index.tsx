@@ -15,8 +15,11 @@ const Header = () => {
   return (
     <header>
       <nav className={clsx(styles.nav_bar, isOpen && styles.nav_bar_open)}>
-        <button className={styles.btn_open_menu} onClick={handleMenu}>
-          <i className={styles.icon_menu}>
+        <button
+          className={styles.btn_open_menu}
+          onClick={handleMenu}
+          aria-label='Menu'>
+          <i aria-hidden='true' className={styles.icon_menu}>
             <HamburguerIcon />
           </i>
         </button>

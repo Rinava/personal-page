@@ -13,7 +13,9 @@ const FlipCard = ({ content }) => {
           <div className={styles.partial_border}>
             <h3>
               {info}
-              <span className={styles.emoji}>{emoji}</span>
+              <span aria-hidden='true' className={styles.emoji}>
+                {emoji}
+              </span>
             </h3>
             {image && (
               <Image
