@@ -17,7 +17,7 @@ const cardContent : CardContent[] = [
     },
   },
   {
-    front: 'My academic degree soon',
+    front: 'My academic degree (soon)',
     back: {
       info: 'Information systems engineer at UTN',
       emoji: '◞( ､ᐛ)､＿/',
