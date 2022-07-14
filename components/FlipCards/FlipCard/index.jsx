@@ -7,16 +7,16 @@ const FlipCard = ({ content }) => {
     <div className={styles.flip_card}>
       <div className={styles.card_inner}>
         <div className={styles.front}>
-          <h2>{front}</h2>
+          <h3 className={styles.title}>{front}</h3>
         </div>
         <div className={styles.back}>
           <div className={styles.partial_border}>
-            <h3>
+            <p className={styles.info}>
               {info}
               <span aria-hidden='true' className={styles.emoji}>
                 {emoji}
               </span>
-            </h3>
+            </p>
             {image && (
               <Image
                 className={styles.image}

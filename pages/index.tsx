@@ -12,6 +12,8 @@ const Home: NextPage = () => {
       <Head>
         <title>Lara Mateo&apos;s Portfolio</title>
         <meta name='description' content='Who is Lara Mateo' />
+        <meta name='theme-color' content='#2196f3' />
+
         <meta httpEquiv='content-language' content='en-us' />
         <meta name='chartSet' charSet='utf-8' />
         <meta
