@@ -14,7 +14,11 @@ const UrlList = ({ isOpen }: Props) => {
           <li key={index} className={styles.link}>
             <Link href={url}>
               <a title={title}>
-                {icon && <i className={styles.icon}>{icon}</i>}
+                {icon && (
+                  <i aria-hidden='true' className={styles.icon}>
+                    {icon}
+                  </i>
+                )}
                 <span className={styles.name}>{name}</span>
               </a>
             </Link>
