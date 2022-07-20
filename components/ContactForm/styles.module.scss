@@ -1,0 +1,95 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+}
+
+.form__input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.form__input:focus {
+    outline: none;
+}
+
+.form__input::placeholder {
+    color: #ccc;
+}
+
+.form__textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.form__textarea:focus {
+    outline: none;
+}
+
+.form__textarea::placeholder {
+    color: #ccc;
+}
+
+.form__submit {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.form__submit:hover {
+    background-color: #ccc;
+}
+
+.form__submit:focus {
+    outline: none;
+}
+
+.form__submit:active {
+    background-color: #ccc;
+}
+
+.form__submit:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.form__button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.form__button:hover {
+    background-color: #ccc;
+}
+
+.form__button:focus {
+    outline: none;
+}
+
+.form__button:active {
+    background-color: #ccc;
+}
+
+.form__button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}

@@ -1,14 +1,15 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Layout from '../components/Layout';
-import FlipCards from '../components/FlipCards';
+import ContactForm from '../components/ContactForm';
+import Socials from '../components/Socials';
 
 const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Lara Mateo&apos;s Portfolio</title>
-        <meta name='description' content='Who is Lara Mateo' />
+        <title>Contact Lara Mateo</title>
+        <meta name='description' content='Email me!' />
         <meta name='theme-color' content='#2196f3' />
 
         <meta httpEquiv='content-language' content='en-us' />
@@ -21,8 +22,9 @@ const Home: NextPage = () => {
         <meta name='copyright' content='Property of Lara Mateo' />
         <meta name='viewport' content='width=device-width, initial-scale=1.0' />
       </Head>
-      <Layout h1='Lara Mateo' h2='You are asking yourself, who is she?'>
-        <FlipCards />
+      <Layout h1='Contact me!'>
+        <ContactForm />
+        {/* <Socials /> */}
       </Layout>
     </>
   );

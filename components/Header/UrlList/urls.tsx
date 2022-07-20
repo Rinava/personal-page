@@ -1,4 +1,9 @@
-import { ComputerIcon, HappyFaceIcon, ResumeIcon, HomeIcon } from './../../commons/Icons';
+import {
+  ComputerIcon,
+  HappyFaceIcon,
+  ResumeIcon,
+  HomeIcon,
+} from './../../commons/Icons';
 const urls = [
   {
     name: 'Home',
@@ -6,23 +11,24 @@ const urls = [
     icon: <HomeIcon />,
     title: 'Go to home',
   },
+  // {
+  //   name: 'Projects',
+  //   url: '/projects',
+  //   icon: <ComputerIcon />,
+  //   title: 'Go to proyects',
+  // },
+
+  // {
+  //   name: 'About me',
+  //   url: '/about-me',
+  //   icon: <HappyFaceIcon />,
+  //   title: 'Go to about me',
+  // },
   {
-    name: 'Projects',
-    url: '/projects',
-    icon: <ComputerIcon />,
-    title: 'Go to proyects',
-  },
-  {
-    name: 'Resume',
-    url: '/resume',
+    name: 'Contact me',
+    url: '/contact',
     icon: <ResumeIcon />,
-    title: 'Go to resume',
-  },
-  {
-    name: 'About me',
-    url: '/about-me',
-    icon: <HappyFaceIcon />,
-    title: 'Go to about me',
+    title: 'Contact me',
   },
 ];
 
