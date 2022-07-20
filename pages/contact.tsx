@@ -22,7 +22,7 @@ const Home: NextPage = () => {
         <meta name='copyright' content='Property of Lara Mateo' />
         <meta name='viewport' content='width=device-width, initial-scale=1.0' />
       </Head>
-      <Layout h1='Contact me!'>
+      <Layout title='Contact' subtitle='❤ We can talk, fill the form if you want to ❤'>
         <ContactForm />
         {/* <Socials /> */}
       </Layout>

@@ -21,7 +21,7 @@ const Home: NextPage = () => {
         <meta name='copyright' content='Property of Lara Mateo' />
         <meta name='viewport' content='width=device-width, initial-scale=1.0' />
       </Head>
-      <Layout h1='Lara Mateo' h2='You are asking yourself, who is she?'>
+      <Layout title='Lara Mateo' subtitle='You are asking yourself, who is she?'>
         <FlipCards />
       </Layout>
     </>

@@ -1,6 +1,6 @@
 import nodemailer from 'nodemailer';
 
-export default async (req, res) => {
+export default Email = async (req, res) => {
   const { name, email, message } = req.body;
   const transporter = nodemailer.createTransport({
     host: 'smtp.gmail.com',
@@ -15,11 +15,12 @@ export default async (req, res) => {
   try {
     await transporter.sendMail({
       from: email,
-      to: 'example@gmail.com',
-      subject: `Contact form submission from ${name}`,
-      html: `<p>You have a contact form submission</p><br>
+      to: 'laramateoco@gmail.com',
+      subject: `Mensaje de ${name}`,
+      html: `<p>Te mandaron este mail desde la pagina que hicimos wuuu</p><br>
         <p><strong>Email: </strong> ${email}</p><br>
-        <p><strong>Message: </strong> ${message}</p><br>
+        <p><strong>Message:<br>
+        <p>${message}</p><br>
       `,
     });
   } catch (error) {
