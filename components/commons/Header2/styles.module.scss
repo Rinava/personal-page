@@ -1,5 +1,7 @@
-.header{
-    text-align: center;
-    font-size: 1.6rem;
+.header {
+    display: flex;
+    justify-content: center;
+    font-size: clamp(1.37rem, 1.2538rem + 0.4958vw, 1.7rem);
     font-family: "Alex Brush";
+    margin: 1rem 0.4rem;
 }
