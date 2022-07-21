@@ -2,7 +2,7 @@ import { useState } from 'react';
 import styles from './header.module.scss';
 import clsx from 'clsx';
 import UrlList from './UrlList';
-
+import headerUrls from './UrlList/urls/headerUrls';
 import { HamburguerIcon } from '../commons/Icons';
 
 const Header = () => {
@@ -24,7 +24,7 @@ const Header = () => {
           </i>
         </button>
         <div className={styles.nav_mobile}>
-          <UrlList isOpen={isOpen} />
+          <UrlList isOpen={isOpen} urls={headerUrls} header />
         </div>
       </nav>
     </header>
