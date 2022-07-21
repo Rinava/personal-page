@@ -1,21 +1,28 @@
-.icon {
-    line-height: 0;
-}
-
-.icon svg {
-    fill: white;
-    margin-right: 10px;
-    width: 1rem;
-    height: 1rem;
-
+.list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 0;
+    margin-top: 1rem;
 }
 
 .link {
+    text-decoration: none;
+    list-style-type: none;
+}
+.link a{
+    display: flex;
+    align-items: center;
+}
+
+.link_header {
     font-weight: bold;
     mix-blend-mode: hard-light;
     display: inline-block;
     padding: 0.4rem;
-
     margin: 1em;
     text-decoration: none;
     color: white;
@@ -43,13 +50,36 @@
     border-radius: 5px;
 }
 
-.link:hover {
+.link_header:hover {
     background-size: 100% 5px, auto;
 }
 
-.link a {
+.link_header a {
     display: flex;
     align-items: center;
+}
+
+.icon svg {
+    margin-right: 10px;
+    width: 1rem;
+    height: 1rem;
+}
+
+.icon {
+    line-height: 0;
+}
+
+.icon_header {
+    line-height: 0;
+}
+
+
+.icon_header svg {
+    fill: white;
+    margin-right: 10px;
+    width: 1rem;
+    height: 1rem;
+
 }
 
 @media screen and (max-width: 768px) {

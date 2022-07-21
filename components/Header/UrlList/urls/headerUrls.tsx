@@ -3,8 +3,8 @@ import {
   HappyFaceIcon,
   ResumeIcon,
   HomeIcon,
-} from './../../commons/Icons';
-const urls = [
+} from '../../../commons/Icons';
+const headerUrls = [
   {
     name: 'Home',
     url: '/',
@@ -32,4 +32,4 @@ const urls = [
   },
 ];
 
-export default urls;
+export default headerUrls;

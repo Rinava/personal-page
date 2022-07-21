@@ -4,6 +4,12 @@
   justify-content: center;
 }
 
+.column {
+  flex-direction: column;
+  justify-content: unset;
+  align-items: center;
+}
+
 .layout {
   display: flex;
   flex-direction: column;
