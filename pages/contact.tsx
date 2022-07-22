@@ -10,7 +10,7 @@ const Home: NextPage = () => {
     <>
       <Head>
         <title>Contact Lara Mateo</title>
-        <meta name='description' content='Email me!' />
+        <meta name='description' content='How to contact me' />
         <meta name='theme-color' content='#2196f3' />
         <meta httpEquiv='content-language' content='en-us' />
         <meta name='chartSet' charSet='utf-8' />

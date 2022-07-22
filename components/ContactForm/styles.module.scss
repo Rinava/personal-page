@@ -65,14 +65,18 @@
 .form__button {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid ;
     border-radius: 5px;
     margin-bottom: 10px;
     cursor: pointer;
+    font-size: 1.2rem;
+    background-color: #2195f3a8;
+    text-shadow: 0 0 1px black;
+    color: white;
 }
 
 .form__button:hover {
-    background-color: #ccc;
+    background-color: #4775B8;
 }
 
 .form__button:focus {
@@ -90,6 +94,6 @@
 
 @media screen and (max-width: 768px) {
     .form {
-        width: 23rem;
+        width: 22rem;
     }
 }
