@@ -1,4 +1,3 @@
-import { StaticImageData } from 'next/image';
 type CardContent = {
   front: string,
   back: {

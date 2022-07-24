@@ -7,12 +7,14 @@ import HamburguerIcon from './HamburguerIcon';
 import EmailIcon from './EmailIcon';
 import GitHubIcon from './GitHubIcon';
 import LinkedInIcon from './LinkedInIcon';
+import ContactIcon from './ContactIcon';
 
 export {
   ComputerIcon,
   HomeIcon,
   HappyFaceIcon,
   ResumeIcon,
+  ContactIcon,
   LanguageIcon,
   HamburguerIcon,
   EmailIcon,

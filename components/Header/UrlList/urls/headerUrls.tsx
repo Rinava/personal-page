@@ -1,6 +1,7 @@
 import {
   ComputerIcon,
   HappyFaceIcon,
+  ContactIcon,
   ResumeIcon,
   HomeIcon,
 } from '../../../commons/Icons';
@@ -25,9 +26,15 @@ const headerUrls = [
   //   title: 'Go to about me',
   // },
   {
+    name: 'Resume',
+    url: '/resume',
+    icon: <ResumeIcon />,
+    title: 'Resume',
+  },
+  {
     name: 'Contact me',
     url: '/contact',
-    icon: <ResumeIcon />,
+    icon: <ContactIcon />,
     title: 'Contact me',
   },
 ];
