@@ -2,7 +2,7 @@
     position: relative;
     overflow: hidden;
     width: 70%;
-    padding-top: 100%;
+    aspect-ratio: 1/1.2;
 }
 
 .resume iframe {
@@ -12,11 +12,21 @@
     bottom: 0;
     right: 0;
     width: 100%;
-    height: 85%;
+    height: 100%;
 }
 
-@media screen and (max-width: 1200px) {
-    .resume iframe {
-        height: 100%;
+.download {
+    text-decoration: #2196f3 underline;
+    color: #2196f3;
+}
+
+.download:hover {
+    color: #0d5998;
+    text-decoration: #0d5998 underline;
+}
+
+@media screen and (max-width: 1300px) {
+    .resume {
+        aspect-ratio: 1/1.4;
     }
 }
