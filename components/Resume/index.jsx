@@ -5,10 +5,12 @@ const Resume = () => {
     <>
       <div className={styles.resume}>
         <iframe
-          src='https://drive.google.com/file/d/1a3UdKnpOoD7jo2O8mlnDekLThygyUeVN/preview?usp=sharing#view=fitW'
+          width='100%'
+          src='https://drive.google.com/file/d/1a3UdKnpOoD7jo2O8mlnDekLThygyUeVN/preview?pli=1#zoom=45&view=fitHeight'
           title='Lara Mateo Resume'
           type='application/pdf'
           frameBorder='0'
+          allowFullScreen
         />
       </div>
       <a
