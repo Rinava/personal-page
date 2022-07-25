@@ -2,14 +2,15 @@ import styles from './styles.module.scss';
 
 const Resume = () => {
   return (
-    <object data='abc.pdf' type='application/pdf' className={styles.resume}>
-      <embed
-        src='/assets/Lara-Mateo-Resume.pdf#view=fitH'
+    <div className={styles.resume}>
+      <iframe
+        src='https://drive.google.com/file/d/1a3UdKnpOoD7jo2O8mlnDekLThygyUeVN/preview?usp=sharing#view=fitH'
         title='Lara Mateo Resume'
-        frameBorder='0'
-        allowFullScreen
+        type='application/pdf'
+        // frameBorder='0'
+        // allowFullScreen
       />
-    </object>
+    </div>
   );
 };
 
